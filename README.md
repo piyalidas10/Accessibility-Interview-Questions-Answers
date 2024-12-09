@@ -1,2 +1,5 @@
 # Accessibility-Interview-Questions-Answers
-Accessibility Interview Questions &amp; Answers
+| No. | Questions & Answers                                                                                                                                                  |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | What is WAI-ARIA? <br/><br/> WAI-ARIA is a technology that can be used to add extra information about the structure and function of a page. This can be especially helpful for users with disabilities who are using assistive technologies.
+| 2   | What is the WCAG? <br/><br/> The Web Content Accessibility Guidelines (WCAG) are a set of standards for making web content accessible to people with disabilities. The WCAG is developed by the World Wide Web Consortium (W3C), an international standards body. There are three levels in WCAG 2.1, Level A (the lowest level), Level AA, and Level AAA (the highest level). These are usually pronounced as ‘single A’, ‘double A’, and ‘triple A’. Most organisations set their standards at level AA because it is both achievable and meaningful, without being too disruptive to the design and development process of a website. 
