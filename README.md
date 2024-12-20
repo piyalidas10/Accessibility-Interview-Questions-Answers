@@ -21,4 +21,14 @@
 | 18   | Name an ARIA attribute that requires either a child/parent relationship or a pairing role. <br/><br/> 1) tablist and tab 2) radiogroup and radio
 
 
+1. What is ARIA, and why is it important?
+2. How would you ensure a form is accessible?
+3. What are some common accessibility issues in web development?
+4. How do you make images accessible?
+5. What is a screen reader, and how does it work?
+6. How would you create an accessible navigation menu?
+7. What is the difference between `role="button"` and a `<button>` element?
+8. How do you test a webpage for accessibility?
+
+
 
