@@ -1,4 +1,53 @@
 # Accessibility-Interview-Questions-Answers
+
+<details>
+
+<summary><strong>Login Form with Accessibility</strong></summary>
+
+**Accessibility (ARIA & Keyboard Support)**
+  -  Semantic HTML usage : Use native <form>, <label>, <button>
+  -  Associate labels with inputs
+  -  Keyboard-only navigation works
+  -  Errors announced to screen readers using aria-live="polite"
+  -  Tab moves logically between fields
+  -  Enter submits the form
+  -  Inputs use aria-invalid="true" when invalid
+
+```
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate aria-labelledby="login-title">
+  <h1 id="login-title">Sign in</h1>
+  <!-- Email -->
+  <label for="email">Email</label>
+  <input id="email" type="email" formControlName="email" autocomplete="username" aria-required="true" [attr.aria-invalid]="form.controls.email.invalid && form.controls.email.touched" />
+  <div role="alert" *ngIf="form.controls.email.touched && form.controls.email.invalid">
+    <span *ngIf="form.controls.email.errors?.['required']">
+      Email is required
+    </span>
+    <span *ngIf="form.controls.email.errors?.['email']">
+      Enter a valid email
+    </span>
+  </div>
+
+  <!-- Password -->
+  <label for="password">Password</label>
+  <input id="password" type="password" formControlName="password" autocomplete="current-password" aria-required="true" [attr.aria-invalid]="     form.controls.password.invalid && form.controls.password.touched" />
+  <div role="alert" *ngIf="form.controls.password.touched && form.controls.password.invalid">
+    <span>Password must be at least 8 characters</span>
+  </div>
+
+  <!-- Server Error -->
+  <div *ngIf="serverError" role="alert" aria-live="polite">
+    {{ serverError }}
+  </div>
+
+  <button type="submit" [disabled]="loading" [attr.aria-busy]="loading">
+    {{ loading ? 'Signing in…' : 'Sign in' }}
+  </button>
+</form>
+```  
+
+</details>
+
 | No. | Questions & Answers                                                                                                                                                  |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | What is WAI-ARIA? <br/><br/> WAI-ARIA is a technology that can be used to add extra information about the structure and function of a page. This can be especially helpful for users with disabilities who are using assistive technologies.
