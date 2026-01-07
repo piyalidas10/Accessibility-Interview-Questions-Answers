@@ -4,7 +4,7 @@
 
 <summary><strong>Login Form with Accessibility (ARIA & Keyboard Support)</strong></summary>
 
-  -  Semantic HTML usage : Use native "<form>, <label>, <button>"
+  -  Semantic HTML usage : Use native form, label, button
   -  Associate labels with inputs
   -  Keyboard-only navigation works
   -  Errors announced to screen readers using aria-live="polite"
