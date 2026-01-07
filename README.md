@@ -2,9 +2,8 @@
 
 <details>
 
-<summary><strong>Login Form with Accessibility</strong></summary>
+<summary><strong>Login Form with Accessibility (ARIA & Keyboard Support)</strong></summary>
 
-**Accessibility (ARIA & Keyboard Support)**
   -  Semantic HTML usage : Use native <form>, <label>, <button>
   -  Associate labels with inputs
   -  Keyboard-only navigation works
